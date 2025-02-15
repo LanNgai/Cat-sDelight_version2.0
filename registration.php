@@ -21,7 +21,7 @@
     <br><br>
     <input type="submit" value="submit">
 </form>
-<a href="index.php">Go to Home Page</a>
+<a href="index.php">Go to Home Page</a><br><br>
 <a href="login.php">Go to Login Page</a>
 </body>
 </html>
