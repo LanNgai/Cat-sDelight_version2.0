@@ -3,17 +3,22 @@
 <body>
 <h3>Login</h3>
 <form method="post" action="account.php">
-    Your name:
+    Your username:
     <br>
-    <input type="text" name="username">
+    <input type="text" name="username" required>
+    <br><br>
+    Your Email:
+    <br>
+    <input type="text" name="email" required>
     <br><br>
     Your password:
     <br>
-    <input type="text" name="password">
+    <input type="text" name="password" required>
     <br><br>
-    <input type="submit" value="submit login details">
+    <input type="submit" value="submit">
 </form>
-<a href="index.php">Reset</a>
+<p>No account?<br> <a href="registration.php">Register Here!</a></p>
+<a href="index.php">Go to Home Page</a>
 </body>
 </html>
 
