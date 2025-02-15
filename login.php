@@ -2,7 +2,7 @@
 <html>
 <body>
 <h3>Login</h3>
-<form method="post" action="">
+<form method="post" action="account.php">
     Your name:
     <br>
     <input type="text" name="username">
