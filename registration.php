@@ -13,15 +13,15 @@
     <br><br>
     Your password:
     <br>
-    <input type="text" name="password" required>
+    <input type="password" name="password" required>
     <br><br>
     Verify password:
     <br>
-    <input type="text" name="confirm_password" required>
+    <input type="password" name="confirm_password" required>
     <br><br>
     <input type="submit" value="submit">
 </form>
 <a href="index.php">Go to Home Page</a><br><br>
-<a href="login.php">Go to Login Page</a>
+<a href="login.html">Go to Login Page</a>
 </body>
 </html>
