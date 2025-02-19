@@ -17,7 +17,7 @@ if (empty($username) || empty($password) || empty($confirm_password) || empty($e
         echo "You have successfully registered!";
 
         echo "<br>";
-        echo "Click here to <a href='login.php'>Login</a>";
+        echo "Click here to <a href='../login/login.php'>Login</a>";
     }
 }
 
