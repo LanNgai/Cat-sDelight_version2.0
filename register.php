@@ -21,8 +21,6 @@ if (empty($username) || empty($password) || empty($confirm_password) || empty($e
     }
 }
 
-
-
 function validateEmailFormat($email) {
     // Regular expression for basic email validation
     $pattern = '/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/';
