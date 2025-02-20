@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">
@@ -9,7 +9,7 @@
 <body>
     <div class="login-container">
         <h3>Login</h3>
-        <form class="login-form" method="post" action="../account.php">
+        <form class="login-form" method="post" action="account.php">
             Your username:
             <br>
             <input type="text" name="username" required>

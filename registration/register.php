@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html>
 <?php
 $username = $_POST['username'];
 $password = $_POST['password'];
@@ -32,7 +34,8 @@ function validateEmailFormat($email) {
         return false; // Email format is invalid
     }
 }
-
+?>
+</html>
 
 
 
