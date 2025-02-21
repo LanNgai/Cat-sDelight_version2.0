@@ -7,11 +7,13 @@
     <link rel="stylesheet" href="css/login.css">
 </head>
 <body>
-<div class="topnav">
-    <a class="active" href="../index.php">Home</a>
-    <a href="../reviews/reviews.php">Reviews</a>
-    <a href="../products/products.php">Products</a>
-</div>
+<nav>
+    <div class="topnav">
+        <a class="active" href="../index.php">Home</a>
+        <a href="../reviews/reviews.php">Reviews</a>
+        <a href="../products/products.php">Products</a>
+    </div>
+</nav>
     <div class="login-container">
         <h3>Login</h3>
         <form class="login-form" method="post" action="account.php">

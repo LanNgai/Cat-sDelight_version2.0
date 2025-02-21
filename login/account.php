@@ -10,37 +10,52 @@
     <title>
         <?= "$name's Profile" ?>
     </title>
-    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/account.css">
 </head>
 <body>
-<div class="topnav">
-    <a class="active" href="../index.php">Home</a>
-    <a href="../reviews/reviews.php">Reviews</a>
-    <a href="../products/products.php">Products</a>
-</div>
+<nav>
+    <div class="topnav">
+        <a href="../index.php">Home</a>
+        <a href="../reviews/reviews.php">Reviews</a>
+        <a href="../products/products.php">Products</a>
+    </div>
+    <div class="accountnav">
+        <button class="dropdownButton">Settings</button>
+        <div class="dropdownContent">
+            <a href="changeDetails.php">Change Details</a>
+            <a href="">Change Password</a>
+            <a href="">Edit Bio</a>
+            <a href="">Change Profile Picture</a>
+            <a href="">Logout</a>
+        </div>
+    </div>
+</nav>
     <?php
 
         $user = [
             'name' => htmlspecialchars($_POST['username']),
             'email' => htmlspecialchars($_POST['email']),
             'bio' => 'Hello! I am a cat owner, I hope to find the best products for my kitties!',
-            'profile_picture' => 'https://via.placeholder.com/150' // Placeholder image
+            'profile_picture' => 'placeholder_pfp.jpg' // Placeholder image
         ];
     }
     ?>
     <div class="overall-profile-container">
         <div class="profile-container">
             <img src="<?= $user['profile_picture']; ?>" alt="Profile Picture" class="profile-picture"/>
-            <h2 class="profile-name">
-                <?= $user['name']; ?>
-            </h2>
-            <h3 class="profile-email">
-                <?= $user['email']; ?>
-            </h3>
-            <p class="profile-bio">
-                <?= $user['bio']; ?>
-            </p>
+            <div class="profile-details">
+                <h2 class="profile-name">
+                    <?= $user['name']; ?>
+                </h2>
+                <h3 class="profile-email">
+                    <?= $user['email']; ?>
+                </h3>
+                <p class="profile-bio">
+                    <?= $user['bio']; ?>
+                </p>
+            </div>
         </div>
+
         <div class="profile-comments-container">
             <?php if (!empty($comments)): ?>
                 <?php foreach ($comments as $comment): ?>
