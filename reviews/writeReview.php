@@ -2,6 +2,11 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <a href='../index.php'>Home</a><br>
+        <a href='reviews.php''>Reviews</a><br>
+        <a href='../login/login.php''>Login</a><br>
+
         <title>Write a Review</title>
     </head>
     <body>
