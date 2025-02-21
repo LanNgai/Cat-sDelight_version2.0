@@ -10,9 +10,14 @@
     <title>
         <?= "$name's Profile" ?>
     </title>
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="css/login.css">
 </head>
 <body>
+<div class="topnav">
+    <a class="active" href="../index.php">Home</a>
+    <a href="../reviews/reviews.php">Reviews</a>
+    <a href="../products/products.php">Products</a>
+</div>
     <?php
 
         $user = [
