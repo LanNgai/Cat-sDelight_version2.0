@@ -11,14 +11,23 @@
         die("Invalid review ID.");
     }
 
-    list($category, $pname, $rating, $reviewText, $url) = explode('|', $reviewData[$reviewId]);
+    list($category, $pname, $qualityRating, $priceRating, $averageRating, $reviewText, $url) = explode('|', $reviewData[$reviewId]);
 
-    echo "<a href='../index.php'>Home</a><br>";
-    echo "<a href='reviews.php'>Reviews</a><br>";
-    echo "<a href='../login/login.php''>Login</a><br>";
+    echo "<div class='top-nav'>
+                <a href='../index.php'>Home</a>
+                <a href='reviews.php'>Reviews</a>
+                <a href='../products/products.php'>Products</a>
+                <a href='../login/login.php'>Login</a>
+            </div>";
+
+    echo "<div class='thumbnail'>
+                    <img src='PlaceHolder.png' alt='Placeholder product image'>
+                    </div>";
 
     echo "<h2>$pname</h2>";
-    echo "<strong>Rating:</strong> $rating<br>";
+    echo "<strong>Quality Rating:</strong> $qualityRating/5<br>";
+    echo "<strong>Price Rating:</strong> $priceRating/5<br>";
+    echo "<strong>Overall Rating:</strong> $averageRating/5<br>";
     echo "<strong>Review:</strong><br> $reviewText<br>";
     echo "<strong>Product Link:</strong><br> <a href='$url'>$url</a><br>";
     echo "<br><a href='reviews.php'>Back to All Reviews</a>";
