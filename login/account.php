@@ -22,20 +22,21 @@
     <div class="accountnav">
         <button class="dropdownButton">Settings</button>
         <div class="dropdownContent">
-            <a href="changeDetails.php">Change Details</a>
-            <a href="">Change Password</a>
-            <a href="">Edit Bio</a>
-            <a href="">Change Profile Picture</a>
-            <a href="">Logout</a>
+            <a href="change/changeUsername.php">Change Username</a>
+            <a href="change/changeEmail.php">Change Email</a>
+            <a href="change/changePassword.php">Change Password</a>
+            <a href="change/changeBio.php">Edit Bio</a>
+            <a href="change/changePfp.php">Change Profile Picture</a>
+            <a href="logout.php">Logout</a>
         </div>
     </div>
 </nav>
     <?php
-
+        $bio_file = file('placeholders/bio.txt', FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
         $user = [
             'name' => htmlspecialchars($_POST['username']),
             'email' => htmlspecialchars($_POST['email']),
-            'bio' => 'Hello! I am a cat owner, I hope to find the best products for my kitties!',
+            'bio' => $bio_file[0],
             'profile_picture' => 'placeholder_pfp.jpg' // Placeholder image
         ];
     }

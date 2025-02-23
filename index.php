@@ -1,16 +1,23 @@
-
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
  	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title> Cat's Delight </title>
-    <link rel="stylesheet" href="css/sport.css">
-    <link rel="stylesheet" href="css/nav.css">
-
+    <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
+<nav>
+    <div class="topnav">
+        <a class="active" href="index.php">Home</a>
+        <a href="reviews/reviews.php">Reviews</a>
+        <a href="products/products.php">Products</a>
+    </div>
+    <div>
+        <a href="login/login.php" style="float: right">Login</a>
+    </div>
+</nav>
     <h1 class="title"> Cat's Delight </h1>
 
     <h2> About us </h2>

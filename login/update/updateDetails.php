@@ -19,7 +19,7 @@ if (empty($username) || empty($password) || empty($confirm_password) || empty($e
         echo "You Have Updated Your Details!";
 
         echo "<br>";
-        echo "Click here to <a href='../login/login.php'>Login</a>";
+        echo "Click here to <a href='../login.php'>Login</a>";
     }
 }
 
